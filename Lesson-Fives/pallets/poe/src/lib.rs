@@ -102,6 +102,8 @@ pub mod pallet {
 
 			Proofs::<T>::insert(&bounded_claim, (dest, block_number));
 
+			// Self::deposit_event(Event::ClaimCreated(sender, claim));
+
 			Ok(().into())
 		}
 	}
